@@ -1,0 +1,23 @@
+{
+    "image": "github_actions:latest",
+    "runArgs": [
+        "--env=DISPLAY",
+        "--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/bin/bash",
+                "overrideName": true
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.cwd": "${containerWorkspaceFolder}"
+    },
+    "extensions": [
+		"esbenp.prettier-vscode",
+        "redhat.vscode-yaml"
+	],
+
+}

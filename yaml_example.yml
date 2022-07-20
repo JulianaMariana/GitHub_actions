@@ -1,0 +1,28 @@
+name: Juliana
+active: true
+
+# Object inside object
+key:
+    key: value
+    key2: 33
+    key3:
+        key: value
+        key2: value
+array:
+    - item1
+    - item2
+    - {key: value} 
+objectsArray:
+    - key: value
+      key2: value2
+    - key: value
+      key2: value2
+longText: >
+        dfgksdhfgkjsdf gskjdfghskjdfhg ksjdfghksdjfgh  ksjdfhgkjsdfg
+        jkdfgkjshdfgjk s
+        kjsdhfgksdf jgdfgsdfgsdfg
+differentLines: |
+        dfgksdhfgkjsdf gskjdfghskjdfhg ksjdfghksdjfgh  ksjdfhgkjsdfg
+        jkdfgkjshdfgjk s
+        kjsdhfgksdf jgdfgsdfgsdfg
+
