@@ -12,8 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
-      - name: pip install
-        run: pip install platform 
+      - name: pip freeze
+        run: pip freeze
       - name: python command
         run: |
           import platform
