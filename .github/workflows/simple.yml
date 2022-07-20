@@ -19,3 +19,12 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windows-command:
+    runs-on: windows-latest
+    needs: ["run-shell-command"]  # Add the previous job as dependency
+    steps:
+      - name: Directory PowerShell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
