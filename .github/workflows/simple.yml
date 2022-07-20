@@ -12,6 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: pip install
+        run: pip install platform 
       - name: python command
         run: |
           import platform
